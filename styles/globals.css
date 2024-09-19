@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+select.hide-caret {
+  appearance: none;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+  display: none;
+}
+
+/* Fallback for other browsers */
+input[type='number'] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+}
+
+/* disable scroll bar on custom section - portfolio */
+
+.renderedFields::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+.renderedFields::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.renderedFields::-webkit-scrollbar-thumb {
+  background: #64D1FF;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #64D1FF;
+  border-radius: 8px;
+}
+
+::selection {
+  color: white;
+  background: #64D1FF;
+}
